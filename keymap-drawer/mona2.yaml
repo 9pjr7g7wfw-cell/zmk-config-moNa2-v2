@@ -518,7 +518,7 @@ layers:
   - BT CLR ALL
 combos:
 - p: [20, 19]
-  k: Sft+TAB
+  k: Ctl+TAB
 - p: [16, 17]
   k: Sft+Ctl+TAB
 - p: [24, 23]
