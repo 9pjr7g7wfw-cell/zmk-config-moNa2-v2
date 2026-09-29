@@ -310,7 +310,7 @@
         compatible = "zmk,combos";
 
         tab_right {
-            bindings = <&kp LS(TAB)>;
+            bindings = <&kp LC(TAB)>;
             key-positions = <20 19>;
         };
 
