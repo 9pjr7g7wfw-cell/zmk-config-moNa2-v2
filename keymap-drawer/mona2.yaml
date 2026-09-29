@@ -345,7 +345,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   FN_W:
-  - {t: ▽, type: trans}
+  - BT CLR ALL
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -353,12 +353,12 @@ layers:
   - {t: ▽, type: trans}
   - Sft+7
   - Sft+8
-  - Sft+9
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - '&studio_unlock'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -370,8 +370,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Sft+1
@@ -516,3 +516,32 @@ layers:
   - {t: ▽, type: trans}
   - '&bootloader'
   - BT CLR ALL
+combos:
+- p: [20, 19]
+  k: Sft+TAB
+- p: [16, 17]
+  k: Sft+Ctl+TAB
+- p: [24, 23]
+  k: Ctl+KP PLUS
+- p: [22, 23]
+  k: Ctl+KP MINUS
+- p: [17, 18]
+  k: '&mkp MB1'
+- p: [17, 19]
+  k: '&mkp MB2'
+- p: [17, 18, 19]
+  k: '&mkp MB3'
+- p: [2, 1]
+  k: Gui+TAB
+- p: [30, 31]
+  k: Alt+RIGHT
+- p: [29, 30]
+  k: Alt+LEFT
+- p: [12, 11]
+  k: ENTER
+- p: [18, 19]
+  k: SCRL_W
+- p: [2, 3]
+  k: DEL
+- p: [13, 12]
+  k: TAB
