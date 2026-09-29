@@ -169,18 +169,18 @@
             label = "HENKAN";
         };
 
-        pc: chains_login {
+        pc: pc {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LANG2 &kp LS(S) &kp LS(A) &kp S &kp N0 &kp N5 &kp N1 &kp N3 &kp N0 &kp N8 &kp RET>;
-            label = "CHAINS_LOGIN";
+            label = "pc";
         };
 
-        rimote: rimote_login {
+        rimo: rimo {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LANG2 &kp LS(G) &kp B &kp N0 &kp N5 &kp N1 &kp N3 &kp N0 &kp N8 &kp RET>;
-            label = "RIMOTE_LOGIN";
+            label = "RIMO";
         };
 
         pascal: pascal {
@@ -190,32 +190,32 @@
             label = "PASCAL";
         };
 
-        expert: expart {
+        expert: expert {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LANG2 &kp U &kp S &kp E &kp R &kp N2 &kp N4 &kp TAB &kp LS(Z) &kp LS(T) &kp LS(G) &kp LS(E) &kp LS(N) &kp LS(P) &kp LS(S) &kp LS(Y) &kp RET>;
-            label = "EXPART";
+            label = "EXPERT";
         };
 
-        sisanzei: pass_43zei {
+        sisanzei: sisanzei {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LANG2 &kp N4 &kp N3 &kp Z &kp E &kp I &kp AT &kp RET>;
-            label = "PASS_43ZEI";
+            label = "sisanzei";
         };
 
-        touki: toukiTS078 {
+        touki: touki {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LANG2 &kp T &kp O &kp U &kp K &kp I &kp LS(T) &kp LS(S) &kp N0 &kp N7 &kp N8 &kp RET>;
-            label = "TOUKITS078";
+            label = "TOUKI";
         };
 
-        toukirenkei: toukirenkei_system {
+        toukirenkei: toukirenkei {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LANG2 &kp LS(E) &kp LS(A) &kp N9 &kp N9 &kp N5 &kp N8 &kp N5 &kp TAB &kp S &kp MINUS &kp N0 &kp N1 &kp N1 &kp N1 &kp N7 &kp N0 &kp N3 &kp N0 &kp N1 &kp N1 &kp N0 &kp N5 &kp RET>;
-            label = "TOUKIRENKEI_SYSTEM";
+            label = "TOUKIRENKEI";
         };
 
         gaiyousyo: gaiyousyo {
@@ -225,18 +225,18 @@
             label = "GAIYOUSYO";
         };
 
-        zeimu1: zeimusystem_login {
+        zeimu1: zeimu1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LANG2 &kp N0 &kp N1 &kp N1 &kp N1 &kp N7 &kp N0 &kp N3 &kp N0 &kp TAB &kp N0 &kp N1 &kp N1 &kp N1 &kp N7 &kp N0 &kp N3 &kp N0 &kp RET>;
-            label = "ZEIMUSYSTEM_LOGIN";
+            label = "ZEIMU1";
         };
 
-        zeimu2: zeimusystem_2 {
+        zeimu2: zeimu2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LANG2 &kp N0 &kp N1 &kp N1 &kp N1 &kp N7 &kp N0 &kp N3 &kp N0 &kp RET>;
-            label = "ZEIMUSYSTEM_2";
+            label = "ZEIMU2";
         };
     };
 
@@ -378,6 +378,11 @@
             bindings = <&kp TAB>;
             key-positions = <13 12>;
         };
+
+        shift_tab {
+            bindings = <&kp LS(TAB)>;
+            key-positions = <14 13>;
+        };
     };
 
     keymap {
@@ -482,10 +487,10 @@
         function_win {
             display-name = "FN_W";
             bindings = <
-&bt BT_CLR_ALL  &trans  &trans  &trans          &trans                                &trans  &kp LS(N7)        &kp LS(N8)        &trans            &trans
-&trans          &trans  &trans  &studio_unlock  &trans                        &trans  &trans  &kp LS(NUMBER_4)  &kp LS(N5)        &kp LS(NUMBER_6)  &trans
-&trans          &trans  &trans  &trans          &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &trans
-&trans          &trans  &trans  &trans          &trans        &trans          &trans  &trans                                                        &trans
+&bt BT_CLR_ALL  &trans  &trans  &trans          &trans                                 &pascal     &kp LS(N7)        &kp LS(N8)        &expert           &touki
+&trans          &trans  &trans  &studio_unlock  &trans                        &zeimu1  &pc         &kp LS(NUMBER_4)  &kp LS(N5)        &kp LS(NUMBER_6)  &sisanzei
+&trans          &trans  &trans  &trans          &bt BT_SEL 3  &bt BT_SEL 4    &zeimu2  &gaiyousyo  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &toukirenkei
+&trans          &trans  &trans  &trans          &trans        &trans          &trans   &trans                                                            &rimo
             >;
         };
 
