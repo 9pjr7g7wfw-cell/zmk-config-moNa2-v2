@@ -350,34 +350,34 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&pascal'
   - Sft+7
   - Sft+8
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&expert'
+  - '&touki'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&studio_unlock'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&zeimu1'
+  - '&pc'
   - Sft+4
   - Sft+5
   - Sft+6
-  - {t: ▽, type: trans}
+  - '&sisanzei'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&zeimu2'
+  - '&gaiyousyo'
   - Sft+1
   - Sft+2
   - Sft+3
-  - {t: ▽, type: trans}
+  - '&toukirenkei'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -386,7 +386,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
+  - '&rimo'
   FN_M:
   - A
   - {t: ▽, type: trans}
@@ -545,3 +545,5 @@ combos:
   k: DEL
 - p: [13, 12]
   k: TAB
+- p: [14, 13]
+  k: Sft+TAB
