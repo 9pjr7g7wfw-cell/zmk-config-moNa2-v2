@@ -346,7 +346,7 @@ layers:
   - {t: ▽, type: trans}
   FN_W:
   - BT CLR ALL
-  - {t: ▽, type: trans}
+  - '&studio_unlock'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -357,8 +357,8 @@ layers:
   - '&touki'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&studio_unlock'
+  - Ctl+Alt+DELETE
+  - KP ENTER
   - {t: ▽, type: trans}
   - '&zeimu1'
   - '&pc'
@@ -521,7 +521,7 @@ combos:
   k: Ctl+TAB
 - p: [16, 17]
   k: Sft+Ctl+TAB
-- p: [24, 23]
+- p: [21, 22]
   k: Ctl+KP PLUS
 - p: [22, 23]
   k: Ctl+KP MINUS
@@ -541,7 +541,7 @@ combos:
   k: SCRL_W
 - p: [2, 3]
   k: DEL
-- p: [12, 11]
+- p: [24, 23]
   k: ENTER
 - p: [13, 12]
   k: TAB
