@@ -106,69 +106,6 @@
        キーに `&rmacro <slot>` を割り当てて使う。 */
 
     macros {
-        to_layer_0: to_layer_0 {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
-            label = "TO_LAYER_0";
-        };
-
-        BT0: BT0 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&tog_off 0 &tog_off 1>,
-                <&macro_wait_time 200>,
-                <&bt BT_SEL 0>,
-                <&macro_wait_time 500>,
-                <&tog_on 0>;
-
-            label = "BT0";
-        };
-
-        BT1: BT1 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&tog_off 0 &tog_off 1>,
-                <&macro_wait_time 200>,
-                <&bt BT_SEL 1>,
-                <&macro_wait_time 500>,
-                <&tog_on 1>;
-
-            label = "BT1";
-        };
-
-        screenshot: screenshot {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LEFT_GUI &kp RSHIFT>,
-                <&macro_wait_time 20>,
-                <&macro_tap>,
-                <&kp S>,
-                <&macro_release>,
-                <&kp LEFT_GUI &kp RSHIFT>;
-
-            label = "SCREENSHOT";
-        };
-
-        henkan: henkan {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LEFT_ALT>,
-                <&macro_wait_time 20>,
-                <&macro_tap>,
-                <&kp GRAVE>,
-                <&macro_release>,
-                <&kp LEFT_ALT>;
-
-            label = "HENKAN";
-        };
-
         pc: pc {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -214,7 +151,7 @@
         toukirenkei: toukirenkei {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LANG2 &kp LS(E) &kp LS(A) &kp N9 &kp N9 &kp N5 &kp N8 &kp N5 &kp TAB &kp S &kp MINUS &kp N0 &kp N1 &kp N1 &kp N1 &kp N7 &kp N0 &kp N3 &kp N0 &kp N1 &kp N1 &kp N0 &kp N5 &kp RET>;
+            bindings = <&kp LANG2 &kp LS(E) &kp LS(A) &kp LS(S) &kp N9 &kp N9 &kp N5 &kp N8 &kp N5 &kp TAB &kp S &kp MINUS &kp N0 &kp N1 &kp N1 &kp N1 &kp N7 &kp N0 &kp N3 &kp N0 &kp N1 &kp N1 &kp N0 &kp N5 &kp RET>;
             label = "TOUKIRENKEI";
         };
 
@@ -321,7 +258,7 @@
 
         kakudai {
             bindings = <&kp LC(KP_PLUS)>;
-            key-positions = <24 23>;
+            key-positions = <21 22>;
         };
 
         syukusyou {
@@ -371,7 +308,7 @@
 
         enter {
             bindings = <&kp ENTER>;
-            key-positions = <12 11>;
+            key-positions = <24 23>;
         };
 
         tab {
@@ -487,10 +424,10 @@
         function_win {
             display-name = "FN_W";
             bindings = <
-&bt BT_CLR_ALL  &trans  &trans  &trans          &trans                                 &pascal     &kp LS(N7)        &kp LS(N8)        &expert           &touki
-&trans          &trans  &trans  &studio_unlock  &trans                        &zeimu1  &pc         &kp LS(NUMBER_4)  &kp LS(N5)        &kp LS(NUMBER_6)  &sisanzei
-&trans          &trans  &trans  &trans          &bt BT_SEL 3  &bt BT_SEL 4    &zeimu2  &gaiyousyo  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &toukirenkei
-&trans          &trans  &trans  &trans          &trans        &trans          &trans   &trans                                                            &rimo
+&bt BT_CLR_ALL  &studio_unlock  &trans              &trans        &trans                                 &pascal     &kp LS(N7)        &kp LS(N8)        &expert           &touki
+&trans          &trans          &kp LC(LA(DELETE))  &kp KP_ENTER  &trans                        &zeimu1  &pc         &kp LS(NUMBER_4)  &kp LS(N5)        &kp LS(NUMBER_6)  &sisanzei
+&trans          &trans          &trans              &trans        &bt BT_SEL 3  &bt BT_SEL 4    &zeimu2  &gaiyousyo  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &toukirenkei
+&trans          &trans          &trans              &trans        &trans        &trans          &trans   &trans                                                            &rimo
             >;
         };
 
