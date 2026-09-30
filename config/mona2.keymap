@@ -424,10 +424,10 @@
         function_win {
             display-name = "FN_W";
             bindings = <
-&bt BT_CLR_ALL  &studio_unlock  &trans              &trans        &trans                                 &pascal     &kp LS(N7)        &kp LS(N8)        &expert           &touki
-&trans          &trans          &kp LC(LA(DELETE))  &kp KP_ENTER  &trans                        &zeimu1  &pc         &kp LS(NUMBER_4)  &kp LS(N5)        &kp LS(NUMBER_6)  &sisanzei
-&trans          &trans          &trans              &trans        &bt BT_SEL 3  &bt BT_SEL 4    &zeimu2  &gaiyousyo  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &toukirenkei
-&trans          &trans          &trans              &trans        &trans        &trans          &trans   &trans                                                            &rimo
+&bt BT_CLR_ALL  &studio_unlock  &trans         &trans        &trans                                 &pascal     &kp LS(N7)        &kp LS(N8)        &expert           &touki
+&trans          &kp LS(TAB)     &kp TAB        &kp KP_ENTER  &trans                        &zeimu1  &pc         &kp LS(NUMBER_4)  &kp LS(N5)        &kp LS(NUMBER_6)  &sisanzei
+&kp END         &kp HOME        &kp PAGE_DOWN  &kp PG_UP     &bt BT_SEL 3  &bt BT_SEL 4    &zeimu2  &gaiyousyo  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &toukirenkei
+&trans          &trans          &trans         &trans        &trans        &trans          &trans   &trans                                                            &rimo
             >;
         };
 
