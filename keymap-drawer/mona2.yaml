@@ -537,13 +537,13 @@ combos:
   k: Alt+RIGHT
 - p: [29, 30]
   k: Alt+LEFT
-- p: [12, 11]
-  k: ENTER
 - p: [18, 19]
   k: SCRL_W
 - p: [2, 3]
   k: DEL
+- p: [12, 11]
+  k: ENTER
 - p: [13, 12]
   k: TAB
-- p: [14, 13]
+- p: [11, 13]
   k: Sft+TAB
