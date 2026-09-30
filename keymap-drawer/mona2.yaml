@@ -356,8 +356,8 @@ layers:
   - '&expert'
   - '&touki'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Ctl+Alt+DELETE
+  - Sft+TAB
+  - TAB
   - KP ENTER
   - {t: ▽, type: trans}
   - '&zeimu1'
@@ -366,10 +366,10 @@ layers:
   - Sft+5
   - Sft+6
   - '&sisanzei'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - END
+  - HOME
+  - PAGE DOWN
+  - PG UP
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
   - '&zeimu2'
