@@ -359,11 +359,6 @@
             key-positions = <29 30>;
         };
 
-        Enter {
-            bindings = <&kp ENTER>;
-            key-positions = <12 11>;
-        };
-
         Layer6_seni {
             bindings = <&mo 6>;
             key-positions = <18 19>;
@@ -374,6 +369,11 @@
             key-positions = <2 3>;
         };
 
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <12 11>;
+        };
+
         tab {
             bindings = <&kp TAB>;
             key-positions = <13 12>;
@@ -381,7 +381,7 @@
 
         shift_tab {
             bindings = <&kp LS(TAB)>;
-            key-positions = <14 13>;
+            key-positions = <11 13>;
         };
     };
 
