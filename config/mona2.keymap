@@ -175,6 +175,20 @@
             bindings = <&kp LANG2 &kp N0 &kp N1 &kp N1 &kp N1 &kp N7 &kp N0 &kp N3 &kp N0 &kp RET>;
             label = "ZEIMU2";
         };
+
+        kakko: kakko {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LANG2) &kp LPAR &kp RPAR &kp LEFT>;
+            label = "KAKKO";
+        };
+
+        kakko2: kakko2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANG1 &kp LPAR &kp RPAR &kp SPACE>;
+            label = "KAKKO2";
+        };
     };
 
     behaviors {
@@ -258,7 +272,7 @@
 
         kakudai {
             bindings = <&kp LC(KP_PLUS)>;
-            key-positions = <21 22>;
+            key-positions = <24 23>;
         };
 
         syukusyou {
@@ -306,19 +320,9 @@
             key-positions = <2 3>;
         };
 
-        enter {
-            bindings = <&kp ENTER>;
-            key-positions = <24 23>;
-        };
-
         tab {
             bindings = <&kp TAB>;
             key-positions = <13 12>;
-        };
-
-        shift_tab {
-            bindings = <&kp LS(TAB)>;
-            key-positions = <11 13>;
         };
     };
 
@@ -328,7 +332,7 @@
         win_layer {
             display-name = "WIN";
             bindings = <
-&mt LG(L) Q     &mt LC(W) W   &mt LG(E) E   &kp R                 &mt LC(T) T                                        &mt LC(Y) Y          &mt LC(U) U  &mt LC(Q) I      &mt LA(LC(DEL)) O     &mt LC(P) P
+&mt LG(L) Q     &mt LC(W) W   &mt LG(E) E   &kp R                 &mt LC(T) T                                        &mt LC(Y) Y          &mt LC(U) U  &mt LC(Q) I      &kp LA(LC(O))         &mt LC(P) P
 &mt LEFT_ALT A  &mt LC(S) S   &kp D         &mt LC(F) F           &mt LC(LG(LEFT)) G                  &bt BT_SEL 0   &mt LC(LG(RIGHT)) H  &kp J        &kp K            &mt LA(GRAVE) L       &mt LS(GRAVE) GRAVE
 &mt LC(Z) Z     &mt LC(X) X   &mt LC(C) C   &mt LC(V) V           &kp B               &bt BT_SEL 2    &bt BT_SEL 1   &kp N                &mt LC(W) M  &mt LC(T) COMMA  &mt LS(MINUS) PERIOD  &mt LS(SLASH) SLASH
 &kp RCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_SHIFT LANG2  &lt 2 LANG1         &kp SPACE       &kp BACKSPACE  &lt 8 ENTER                                                              &kp LEFT_CONTROL
@@ -352,10 +356,10 @@
         num_win {
             display-name = "NUM_W";
             bindings = <
-&mt F2 F1             &mt F4 F3          &kp UP_ARROW    &mt F5 F6   &mt F8 F7                                     &kp KP_ASTERISK       &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp LS(KP_SLASH)
-&mt ESC SPACE         &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT   &mt F9 F10                     &kp LS(SEMI)   &kp LS(SINGLE_QUOTE)  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS
-&kp RS(LEFT_BRACKET)  &kp RIGHT_BRACKET  &kp LS(N9)      &kp LS(N0)  &mt F12 F11  &kp KP_NUMLOCK    &kp RS(EQUAL)  &kp EQUAL             &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT
-&kp LCTRL             &kp LEFT_GUI       &kp LEFT_ALT    &trans      &trans       &trans            &kp BACKSPACE  &kp KP_NUMBER_0                                                          &kp RIGHT_SHIFT
+&mt F2 F1       &mt F4 F3       &mt F6 F5       &mt F8 F7  &mt F10 F9                                   &kp KP_ASTERISK       &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp LS(KP_SLASH)
+&mt ESC SPACE   &kp ENTER       &kp UP_ARROW    &kp TAB    &kp LS(TAB)                   &kp LS(SEMI)   &kp LS(SINGLE_QUOTE)  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS
+&kp LEFT_SHIFT  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &mt F12 F11  &kp LS(LG(S))    &kp RS(EQUAL)  &kp EQUAL             &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT
+&kp LCTRL       &kp LEFT_GUI    &kp LEFT_ALT    &trans     &trans       &trans           &kp BACKSPACE  &kp KP_NUMBER_0                                                          &kp KP_NUMLOCK
             >;
 
             sensor-bindings = <&rsr_default>;
@@ -424,10 +428,10 @@
         function_win {
             display-name = "FN_W";
             bindings = <
-&bt BT_CLR_ALL  &studio_unlock  &trans         &trans        &trans                                 &pascal     &kp LS(N7)        &kp LS(N8)        &expert           &touki
-&trans          &kp LS(TAB)     &kp TAB        &kp KP_ENTER  &trans                        &zeimu1  &pc         &kp LS(NUMBER_4)  &kp LS(N5)        &kp LS(NUMBER_6)  &sisanzei
-&kp END         &kp HOME        &kp PAGE_DOWN  &kp PG_UP     &bt BT_SEL 3  &bt BT_SEL 4    &zeimu2  &gaiyousyo  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &toukirenkei
-&trans          &trans          &trans         &trans        &trans        &trans          &trans   &trans                                                            &rimo
+&bt BT_CLR_ALL  &studio_unlock  &trans         &trans     &trans                                 &pascal     &kp LS(N7)        &kp LS(N8)        &expert           &touki
+&trans          &trans          &kakko2        &kakko     &trans                        &zeimu1  &pc         &kp LS(NUMBER_4)  &kp LS(N5)        &kp LS(NUMBER_6)  &sisanzei
+&kp END         &kp HOME        &kp PAGE_DOWN  &kp PG_UP  &bt BT_SEL 3  &bt BT_SEL 4    &zeimu2  &gaiyousyo  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &toukirenkei
+&trans          &trans          &trans         &trans     &trans        &trans          &trans   &trans                                                            &rimo
             >;
         };
 
