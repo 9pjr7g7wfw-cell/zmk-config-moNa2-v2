@@ -431,7 +431,7 @@
 &bt BT_CLR_ALL  &studio_unlock  &trans         &trans     &trans                                 &pascal     &kp LS(N7)        &kp LS(N8)        &expert           &touki
 &trans          &trans          &kakko2        &kakko     &trans                        &zeimu1  &pc         &kp LS(NUMBER_4)  &kp LS(N5)        &kp LS(NUMBER_6)  &sisanzei
 &kp END         &kp HOME        &kp PAGE_DOWN  &kp PG_UP  &bt BT_SEL 3  &bt BT_SEL 4    &zeimu2  &gaiyousyo  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &toukirenkei
-&trans          &trans          &trans         &trans     &trans        &trans          &trans   &trans                                                            &rimo
+&trans          &trans          &trans         &trans     &kp ESC       &trans          &trans   &trans                                                            &rimo
             >;
         };
 
