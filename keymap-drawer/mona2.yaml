@@ -9,7 +9,7 @@ layers:
   - {t: Y, h: Ctl+Y}
   - {t: U, h: Ctl+U}
   - {t: I, h: Ctl+Q}
-  - {t: O, h: Alt+Ctl+DEL}
+  - Alt+Ctl+O
   - {t: P, h: Ctl+P}
   - {t: A, h: LEFT ALT}
   - {t: S, h: Ctl+S}
@@ -89,31 +89,31 @@ layers:
   NUM_W:
   - {t: F1, h: F2}
   - {t: F3, h: F4}
-  - UP ARROW
-  - {t: F6, h: F5}
+  - {t: F5, h: F6}
   - {t: F7, h: F8}
+  - {t: F9, h: F10}
   - KP ASTERISK
   - KP 7
   - KP 8
   - KP 9
   - Sft+KP SLASH
   - {t: SPACE, h: ESC}
-  - LEFT ARROW
-  - DOWN ARROW
-  - RIGHT
-  - {t: F10, h: F9}
+  - ENTER
+  - UP ARROW
+  - TAB
+  - Sft+TAB
   - Sft+;
   - Sft+'
   - KP 4
   - KP 5
   - KP 6
   - KP MINUS
-  - Sft+[
-  - ']'
-  - Sft+9
-  - Sft+0
+  - LEFT SHIFT
+  - LEFT ARROW
+  - DOWN ARROW
+  - RIGHT
   - {t: F11, h: F12}
-  - KP NUMLOCK
+  - Sft+Gui+S
   - Sft+=
   - '='
   - KP 1
@@ -128,7 +128,7 @@ layers:
   - {t: ▽, type: trans}
   - BACKSPACE
   - KP 0
-  - RIGHT SHIFT
+  - KP NUMLOCK
   NUM_M:
   - ESCAPE
   - '!'
@@ -356,9 +356,9 @@ layers:
   - '&expert'
   - '&touki'
   - {t: ▽, type: trans}
-  - Sft+TAB
-  - TAB
-  - KP ENTER
+  - {t: ▽, type: trans}
+  - '&kakko2'
+  - '&kakko'
   - {t: ▽, type: trans}
   - '&zeimu1'
   - '&pc'
@@ -521,7 +521,7 @@ combos:
   k: Ctl+TAB
 - p: [16, 17]
   k: Sft+Ctl+TAB
-- p: [21, 22]
+- p: [24, 23]
   k: Ctl+KP PLUS
 - p: [22, 23]
   k: Ctl+KP MINUS
@@ -541,9 +541,5 @@ combos:
   k: SCRL_W
 - p: [2, 3]
   k: DEL
-- p: [24, 23]
-  k: ENTER
 - p: [13, 12]
   k: TAB
-- p: [11, 13]
-  k: Sft+TAB
