@@ -1,48 +1,48 @@
 layout: {zmk_keyboard: mona2}
 layers:
   WIN:
-  - Q
-  - W
-  - E
+  - {t: Q, h: Gui+L}
+  - {t: W, h: Ctl+W}
+  - {t: E, h: Gui+E}
   - R
-  - T
-  - Y
-  - U
-  - I
+  - {t: T, h: Ctl+T}
+  - {t: Y, h: Ctl+Y}
+  - {t: U, h: Ctl+U}
+  - {t: I, h: Ctl+Q}
   - O
-  - P
-  - A
-  - S
-  - D
-  - F
-  - G
-  - '-'
-  - H
-  - J
+  - {t: P, h: Ctl+P}
+  - {t: A, h: LEFT ALT}
+  - {t: S, h: Ctl+S}
+  - {t: D, h: SCRL_W}
+  - {t: F, h: Ctl+F}
+  - {t: G, h: Ctl+Gui+LEFT}
+  - {t: BT, h: '0'}
+  - {t: Ctl+Gui+RIGHT, h: H}
+  - {t: J, h: Sft+`}
   - K
-  - L
-  - {t: ;, h: MOUSE_W}
-  - {t: Z, h: LEFT SHIFT}
-  - X
-  - C
-  - V
+  - '&mg_set_0'
+  - {t: '-', h: SCRL_W}
+  - {t: Z, h: Ctl+Z}
+  - {t: X, h: Ctl+X}
+  - {t: C, h: Ctl+C}
+  - {t: V, h: Ctl+V}
   - B
-  - ':'
-  - ;
+  - {t: BT, h: '2'}
+  - {t: BT, h: '1'}
   - N
-  - M
-  - ','
-  - .
-  - {t: /, h: BLE_W}
+  - {t: M, h: Ctl+W}
+  - {t: ',', h: Ctl+T}
+  - {t: ., h: Sft+-}
+  - {t: /, h: Sft+/}
   - RCTRL
   - LEFT WIN
   - LEFT ALT
-  - {t: '`', h: NUM_W}
-  - {t: SPACE, h: MOUSE_W}
-  - {t: '-', h: SCRL_W}
-  - ENTER
+  - {t: LANG2, h: LEFT SHIFT}
+  - {t: LANG1, h: NUM_W}
+  - {t: SPACE, h: LEFT CONTROL}
   - BACKSPACE
-  - RIGHT SHIFT
+  - {t: ENTER, h: FN_W}
+  - Alt+`
   MAC:
   - Q
   - W
@@ -123,8 +123,8 @@ layers:
   - LCTRL
   - LEFT GUI
   - LEFT ALT
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - ENTER
   - BACKSPACE
@@ -271,7 +271,7 @@ layers:
   - {t: ▽, type: trans}
   - HOME
   - LEFT ARROW
-  - DOWN ARROW
+  - {t: DOWN ARROW, type: held}
   - RIGHT ARROW
   - END
   - OUT TOG
@@ -297,7 +297,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -385,7 +385,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   FN_M:
   - A
@@ -463,7 +463,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: BT CLR, type: held}
+  - BT CLR
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
