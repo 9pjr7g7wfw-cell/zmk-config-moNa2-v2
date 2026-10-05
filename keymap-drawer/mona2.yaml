@@ -38,8 +38,8 @@ layers:
   - LEFT WIN
   - LEFT ALT
   - {t: LANG2, h: LEFT SHIFT}
-  - {t: C, h: NUM_W}
-  - {t: B, h: LEFT CONTROL}
+  - {t: LANG1, h: NUM_W}
+  - {t: SPACE, h: LEFT CONTROL}
   - BACKSPACE
   - {t: ENTER, h: FN_W}
   - Alt+`
