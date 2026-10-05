@@ -366,10 +366,10 @@ layers:
   - Sft+5
   - Sft+6
   - '&zei'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - F1
+  - F2
+  - F5
+  - F9
   - {t: BT, h: '4'}
   - {t: BT, h: '3'}
   - '&zeimu1'
