@@ -409,7 +409,7 @@
         num_win {
             display-name = "NUM_W";
             bindings = <
-&kp KP_NUMLOCK           &mt F4 F3       &mt F7 F6       &mt F8 F10    &mt F11 F12                                  &kp KP_ASTERISK       &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9            &kp SLASH
+&kp KP_NUMLOCK           &mt F4 F3       &mt F7 F6       &mt F8 F10    &mt F12 F11                                  &kp KP_ASTERISK       &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9            &kp SLASH
 &mt LEFT_SHIFT KP_MINUS  &mt ESC KP_DOT  &kp ENTER       &kp TAB       &kp LS(TAB)                   &kp LS(SEMI)   &kp LS(SINGLE_QUOTE)  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6            &kp KP_SLASH
 &kp LEFT                 &kp RIGHT       &kp DOWN_ARROW  &kp UP_ARROW  &kp SPACE    &kp LS(LG(S))    &kp RS(EQUAL)  &kp EQUAL             &kp KP_NUMBER_1  &kp KP_NUMBER_2  &mt LS(MINUS) KP_NUMBER_3  &kp LS(SLASH)
 &kp LCTRL                &kp LEFT_GUI    &kp LEFT_ALT    &trans        &trans       &trans           &kp BACKSPACE  &kp KP_NUMBER_0                                                                    &kp RIGHT_SHIFT
