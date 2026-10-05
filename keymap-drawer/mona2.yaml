@@ -91,7 +91,7 @@ layers:
   - {t: F3, h: F4}
   - {t: F6, h: F7}
   - {t: F10, h: F8}
-  - {t: F12, h: F11}
+  - {t: F11, h: F12}
   - KP ASTERISK
   - KP 7
   - KP 8
