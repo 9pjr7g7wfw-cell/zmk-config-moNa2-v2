@@ -345,39 +345,39 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   FN_W:
+  - '&studio_unlock'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - BT CLR
+  - '&pascal'
   - Sft+7
   - Sft+8
-  - Sft+9
+  - '&expart'
+  - '&TS078'
+  - BT CLR ALL
   - {t: ▽, type: trans}
+  - '&kakko2'
+  - '&kakko1'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&gaiyousyo'
+  - '&chains'
   - Sft+4
   - Sft+5
   - Sft+6
+  - '&zei'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: BT, h: '4'}
+  - {t: BT, h: '3'}
+  - '&zeimu1'
+  - '&zeimu2'
   - Sft+1
   - Sft+2
   - Sft+3
-  - {t: ▽, type: trans}
+  - '&touki'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -386,7 +386,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
+  - '&rimo'
   FN_M:
   - A
   - {t: ▽, type: trans}
