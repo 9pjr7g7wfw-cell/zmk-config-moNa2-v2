@@ -278,7 +278,7 @@ layers:
   - {t: ▽, type: trans}
   - Ctl+Sft+TAB
   - Ctl+TAB
-  - '&mkp MB2'
+  - '&migikado'
   - {t: ▽, type: trans}
   - LEFT SHIFT
   - Gui+Sft+LEFT ARROW
@@ -288,8 +288,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Ctl+W
-  - Ctl+T
+  - '&hidarikado'
+  - Gui+LEFT
   - '&mkp MB2'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
