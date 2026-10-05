@@ -17,10 +17,10 @@ layers:
   - {t: F, h: Ctl+F}
   - {t: G, h: Ctl+Gui+LEFT}
   - {t: BT, h: '0'}
-  - {t: Ctl+Gui+RIGHT, h: H}
+  - {t: H, h: Ctl+Gui+RIGHT}
   - {t: J, h: Sft+`}
   - K
-  - '&mg_set_0'
+  - L
   - {t: '-', h: SCRL_W}
   - {t: Z, h: Ctl+Z}
   - {t: X, h: Ctl+X}
@@ -38,8 +38,8 @@ layers:
   - LEFT WIN
   - LEFT ALT
   - {t: LANG2, h: LEFT SHIFT}
-  - {t: LANG1, h: NUM_W}
-  - {t: SPACE, h: LEFT CONTROL}
+  - {t: D, h: NUM_W}
+  - {t: C, h: LEFT CONTROL}
   - BACKSPACE
   - {t: ENTER, h: FN_W}
   - Alt+`
@@ -537,3 +537,5 @@ combos:
   k: '&mkp MB2'
 - p: [17, 19]
   k: '&mkp MB3'
+- p: [19, 20]
+  k: '&mg_set_0'
