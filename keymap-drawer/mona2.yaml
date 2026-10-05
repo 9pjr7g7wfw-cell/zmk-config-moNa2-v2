@@ -21,7 +21,7 @@ layers:
   - {t: J, h: Sft+`}
   - K
   - '&mg_set_0'
-  - '-'
+  - {t: '-', h: SCRL_W}
   - {t: Z, h: Ctl+Z}
   - {t: X, h: Ctl+X}
   - {t: C, h: Ctl+C}
@@ -359,13 +359,13 @@ layers:
   - {t: ▽, type: trans}
   - '&kakko2'
   - '&kakko1'
-  - {t: ▽, type: trans}
+  - '&rimo'
   - '&gaiyousyo'
   - '&chains'
   - Sft+4
   - Sft+5
   - Sft+6
-  - '&zei'
+  - Ctl+Alt+DEL
   - F1
   - F2
   - F5
@@ -386,7 +386,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  - '&rimo'
+  - '&zei'
   FN_M:
   - A
   - {t: ▽, type: trans}
