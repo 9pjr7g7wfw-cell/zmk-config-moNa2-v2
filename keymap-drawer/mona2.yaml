@@ -21,7 +21,7 @@ layers:
   - {t: J, h: Sft+`}
   - K
   - '&mg_set_0'
-  - {t: '-', h: SCRL_W}
+  - '-'
   - {t: Z, h: Ctl+Z}
   - {t: X, h: Ctl+X}
   - {t: C, h: Ctl+C}
