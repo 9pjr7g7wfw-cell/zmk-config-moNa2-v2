@@ -381,7 +381,7 @@
             display-name = "WIN";
             bindings = <
 &mt LG(L) Q     &mt LC(W) W   &mt LG(E) E   &kp R                 &mt LC(T) T                                                  &mt LC(Y) Y          &mt LC(U) U      &mt LC(Q) I      &kp O              &mt LC(P) P
-&mt LEFT_ALT A  &mt LC(S) S   &lt 6 D       &mt LC(F) F           &mt LC(LG(LEFT)) G                            &bt BT_SEL 0   &mt H LC(LG(RIGHT))  &mt LS(GRAVE) J  &kp K            &mg_set_0          &kp MINUS
+&mt LEFT_ALT A  &mt LC(S) S   &lt 6 D       &mt LC(F) F           &mt LC(LG(LEFT)) G                            &bt BT_SEL 0   &mt H LC(LG(RIGHT))  &mt LS(GRAVE) J  &kp K            &mg_set_0          &lt 6 MINUS
 &mt LC(Z) Z     &mt LC(X) X   &mt LC(C) C   &mt LC(V) V           &kp B               &bt BT_SEL 2              &bt BT_SEL 1   &kp N                &mt LC(W) M      &mt LC(T) COMMA  &mt LS(MINUS) DOT  &mt LS(SLASH) SLASH
 &kp RCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_SHIFT LANG2  &lt 2 LANG1         &mt LEFT_CONTROL SPACE    &kp BACKSPACE  &lt 8 ENTER                                                               &kp LA(GRAVE)
             >;
@@ -477,9 +477,9 @@
             display-name = "FN_W";
             bindings = <
 &studio_unlock  &trans  &trans   &trans   &bt BT_CLR                                &pascal  &kp LS(N7)        &kp LS(N8)        &expart           &TS078
-&bt BT_CLR_ALL  &trans  &kakko2  &kakko1  &trans                        &gaiyousyo  &chains  &kp LS(NUMBER_4)  &kp LS(N5)        &kp LS(NUMBER_6)  &zei
+&bt BT_CLR_ALL  &trans  &kakko2  &kakko1  &rimo                         &gaiyousyo  &chains  &kp LS(NUMBER_4)  &kp LS(N5)        &kp LS(NUMBER_6)  &kp LC(LA(DEL))
 &kp F1          &kp F2  &kp F5   &kp F9   &bt BT_SEL 4  &bt BT_SEL 3    &zeimu1     &zeimu2  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &touki
-&trans          &trans  &trans   &trans   &trans        &trans          &trans      &trans                                                         &rimo
+&trans          &trans  &trans   &trans   &trans        &trans          &trans      &trans                                                         &zei
             >;
         };
 
