@@ -252,6 +252,20 @@
             bindings = <&kp LANG1 &kp K &kp A &kp K &kp K &kp O &kp SPACE>;
             label = "KAKKO2";
         };
+
+        hidarikado: hidarikado {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_WIN &kp LEFT &kp UP>;
+            label = "HIDARIKADO";
+        };
+
+        migikado: migikado {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_WIN &kp RIGHT &kp UP>;
+            label = "MIGIKADO";
+        };
     };
 
     behaviors {
@@ -457,10 +471,10 @@
         scroll_win {
             display-name = "SCRL_W";
             bindings = <
-&kp ESCAPE      &msc SCRL_DOWN          &kp UP_ARROW    &msc SCRL_UP             &trans                           &trans  &msc SCRL_LEFT   &msc SCRL_RIGHT  &trans    &trans
-&kp HOME        &msc SCRL_LEFT          &kp DOWN_ARROW  &msc SCRL_RIGHT          &kp END            &out OUT_TOG  &trans  &kp LC(LS(TAB))  &kp LC(TAB)      &mkp MB2  &trans
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans    &trans        &trans  &kp LC(W)        &kp LC(T)        &mkp MB2  &trans
-&trans          &trans                  &trans          &trans                   &trans   &trans    &trans        &trans                                              &trans
+&kp ESCAPE      &msc SCRL_DOWN          &kp UP_ARROW    &msc SCRL_UP             &trans                           &trans  &msc SCRL_LEFT   &msc SCRL_RIGHT  &trans     &trans
+&kp HOME        &msc SCRL_LEFT          &kp DOWN_ARROW  &msc SCRL_RIGHT          &kp END            &out OUT_TOG  &trans  &kp LC(LS(TAB))  &kp LC(TAB)      &migikado  &trans
+&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans    &trans        &trans  &hidarikado      &kp LG(LEFT)     &mkp MB2   &trans
+&trans          &trans                  &trans          &trans                   &trans   &trans    &trans        &trans                                               &trans
             >;
 
             sensor-bindings = <&rsr_default>;
