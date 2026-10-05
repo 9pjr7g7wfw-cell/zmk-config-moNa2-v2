@@ -38,8 +38,8 @@ layers:
   - LEFT WIN
   - LEFT ALT
   - {t: LANG2, h: LEFT SHIFT}
-  - {t: LANG1, h: NUM_W}
-  - {t: SPACE, h: LEFT CONTROL}
+  - {t: C, h: NUM_W}
+  - {t: B, h: LEFT CONTROL}
   - BACKSPACE
   - {t: ENTER, h: FN_W}
   - Alt+`
@@ -116,8 +116,8 @@ layers:
   - Sft+Gui+S
   - Sft+=
   - '='
-  - '1'
-  - '2'
+  - KP 1
+  - KP 2
   - {t: KP 3, h: Sft+-}
   - Sft+/
   - LCTRL
@@ -265,8 +265,8 @@ layers:
   - '&msc SCRL_UP'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&mkp MB3'
+  - '&msc SCRL_LEFT'
+  - '&msc SCRL_RIGHT'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - HOME
