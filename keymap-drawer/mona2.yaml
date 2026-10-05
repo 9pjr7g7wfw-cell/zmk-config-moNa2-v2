@@ -276,8 +276,8 @@ layers:
   - END
   - OUT TOG
   - {t: ▽, type: trans}
-  - '&mkp MB1'
-  - {t: ▽, type: trans}
+  - Ctl+Sft+TAB
+  - Ctl+TAB
   - '&mkp MB2'
   - {t: ▽, type: trans}
   - LEFT SHIFT
@@ -288,8 +288,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&mkp MB1'
-  - {t: ▽, type: trans}
+  - Ctl+W
+  - Ctl+T
   - '&mkp MB2'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
