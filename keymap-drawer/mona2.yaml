@@ -87,47 +87,47 @@ layers:
   - BACKSPACE
   - RIGHT SHIFT
   NUM_W:
-  - ESCAPE
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '='
-  - '7'
-  - '8'
-  - '9'
-  - '*'
+  - KP NUMLOCK
+  - {t: F3, h: F4}
+  - {t: F6, h: F7}
+  - {t: F10, h: F8}
+  - {t: F12, h: F11}
+  - KP ASTERISK
+  - KP 7
+  - KP 8
+  - KP 9
+  - /
+  - {t: KP MINUS, h: LEFT SHIFT}
+  - {t: KP DOT, h: ESC}
+  - ENTER
   - TAB
-  - '%'
-  - ^
-  - '&'
-  - '*'
-  - '%'
-  - '0'
-  - '4'
-  - '5'
-  - '6'
-  - '-'
-  - '|'
-  - (
-  - )
-  - '['
-  - ']'
-  - {t: ▽, type: trans}
-  - +
-  - .
+  - Sft+TAB
+  - Sft+;
+  - Sft+'
+  - KP 4
+  - KP 5
+  - KP 6
+  - KP SLASH
+  - LEFT
+  - RIGHT
+  - DOWN ARROW
+  - UP ARROW
+  - SPACE
+  - Sft+Gui+S
+  - Sft+=
+  - '='
   - '1'
   - '2'
-  - '3'
-  - /
+  - {t: KP 3, h: Sft+-}
+  - Sft+/
   - LCTRL
   - LEFT GUI
   - LEFT ALT
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  - ENTER
   - BACKSPACE
+  - KP 0
   - RIGHT SHIFT
   NUM_M:
   - ESCAPE
@@ -260,9 +260,9 @@ layers:
   - '|'
   SCRL_W:
   - ESCAPE
-  - Ctl+Sft+TAB
+  - '&msc SCRL_DOWN'
   - UP ARROW
-  - Ctl+TAB
+  - '&msc SCRL_UP'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -270,9 +270,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - HOME
-  - LEFT ARROW
+  - '&msc SCRL_LEFT'
   - {t: DOWN ARROW, type: held}
-  - RIGHT ARROW
+  - '&msc SCRL_RIGHT'
   - END
   - OUT TOG
   - {t: ▽, type: trans}
@@ -351,6 +351,20 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - Sft+7
+  - Sft+8
+  - Sft+9
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Sft+4
+  - Sft+5
+  - Sft+6
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -360,23 +374,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&mkp MB1'
-  - '&mkp MB3'
-  - '&mkp MB2'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Sft+1
+  - Sft+2
+  - Sft+3
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -516,3 +516,24 @@ layers:
   - {t: ▽, type: trans}
   - '&bootloader'
   - BT CLR ALL
+combos:
+- p: [13, 12]
+  k: TAB
+- p: [24, 23]
+  k: Ctl+KP PLUS
+- p: [22, 23]
+  k: Ctl+KP MINUS
+- p: [29, 30]
+  k: '&mkp MB4'
+- p: [30, 31]
+  k: '&mkp MB5'
+- p: [1, 2]
+  k: Gui+TAB
+- p: [2, 3]
+  k: DEL
+- p: [17, 18]
+  k: '&mkp MB1'
+- p: [18, 19]
+  k: '&mkp MB2'
+- p: [17, 19]
+  k: '&mkp MB3'
