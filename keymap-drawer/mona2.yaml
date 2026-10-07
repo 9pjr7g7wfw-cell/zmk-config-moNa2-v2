@@ -267,7 +267,7 @@ layers:
   - {t: ▽, type: trans}
   - '&msc SCRL_LEFT'
   - '&msc SCRL_RIGHT'
-  - {t: ▽, type: trans}
+  - Gui+DOWN
   - {t: ▽, type: trans}
   - HOME
   - '&msc SCRL_LEFT'
