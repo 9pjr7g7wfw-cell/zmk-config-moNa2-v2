@@ -428,7 +428,7 @@
         win_layer {
             display-name = "WIN";
             bindings = <
-&mt LG(L) Q     &kp W         &mt LG(E) E   &kp R                 &mt LC(T) T                                               &mt LC(Y) Y  &mt LC(U) U      &mt LC(Q) I      &mt LC(P) O        &kp P
+&mt LG(L) Q     &kp W         &mt LG(E) E   &kp R                 &mt LC(T) T                                               &mt LC(Y) Y  &mt LC(U) U      &mt LC(Q) I      &kp O              &mt LC(P) P
 &mt LEFT_ALT A  &mt LC(S) S   &lt 6 D       &mt LC(F) F           &kp G                                  &kp LA(GRAVE)      &kp H        &mt LS(GRAVE) J  &kp K            &lt 10 L           &lt 6 MINUS
 &mt LC(Z) Z     &mt LC(X) X   &mt LC(C) C   &mt LC(V) V           &kp B        &kp LC(LG(LEFT))          &kp LC(LG(RIGHT))  &kp N        &mt LC(W) M      &mt LC(T) COMMA  &mt LS(MINUS) DOT  &mt LS(SLASH) SLASH
 &kp RCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_SHIFT LANG2  &lt 2 LANG1  &mt LEFT_CONTROL SPACE    &kp BACKSPACE      &lt 8 ENTER                                                       &kp RIGHT_SHIFT
