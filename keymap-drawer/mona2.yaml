@@ -9,8 +9,8 @@ layers:
   - {t: Y, h: Ctl+Y}
   - {t: U, h: Ctl+U}
   - {t: I, h: Ctl+Q}
-  - {t: O, h: Ctl+P}
-  - P
+  - O
+  - {t: P, h: Ctl+P}
   - {t: A, h: LEFT ALT}
   - {t: S, h: Ctl+S}
   - {t: D, h: SCRL_W}
