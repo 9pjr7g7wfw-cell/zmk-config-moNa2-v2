@@ -2,33 +2,33 @@ layout: {zmk_keyboard: mona2}
 layers:
   WIN:
   - {t: Q, h: Gui+L}
-  - {t: W, h: Ctl+W}
+  - W
   - {t: E, h: Gui+E}
   - R
   - {t: T, h: Ctl+T}
   - {t: Y, h: Ctl+Y}
   - {t: U, h: Ctl+U}
   - {t: I, h: Ctl+Q}
-  - O
-  - {t: P, h: Ctl+P}
+  - {t: O, h: Ctl+P}
+  - P
   - {t: A, h: LEFT ALT}
   - {t: S, h: Ctl+S}
   - {t: D, h: SCRL_W}
   - {t: F, h: Ctl+F}
-  - {t: G, h: Ctl+Gui+LEFT}
-  - {t: BT, h: '0'}
-  - {t: H, h: Ctl+Gui+RIGHT}
+  - G
+  - Alt+`
+  - H
   - {t: J, h: Sft+`}
   - K
-  - L
+  - {t: L, h: BLE_W}
   - {t: '-', h: SCRL_W}
   - {t: Z, h: Ctl+Z}
   - {t: X, h: Ctl+X}
   - {t: C, h: Ctl+C}
   - {t: V, h: Ctl+V}
   - B
-  - {t: BT, h: '2'}
-  - {t: BT, h: '1'}
+  - Ctl+Gui+LEFT
+  - Ctl+Gui+RIGHT
   - N
   - {t: M, h: Ctl+W}
   - {t: ',', h: Ctl+T}
@@ -42,7 +42,7 @@ layers:
   - {t: SPACE, h: LEFT CONTROL}
   - BACKSPACE
   - {t: ENTER, h: FN_W}
-  - Alt+`
+  - RIGHT SHIFT
   MAC:
   - Q
   - W
@@ -87,7 +87,7 @@ layers:
   - BACKSPACE
   - RIGHT SHIFT
   NUM_W:
-  - KP NUMLOCK
+  - {t: Ctl+Sft+LEFT, h: Ctl+Sft+RIGHT}
   - {t: F3, h: F4}
   - {t: F6, h: F7}
   - {t: F10, h: F8}
@@ -96,7 +96,7 @@ layers:
   - KP 7
   - KP 8
   - KP 9
-  - /
+  - {t: Sft+Ctl+UP ARROW, h: Ctl+Sft+DOWN}
   - {t: KP MINUS, h: LEFT SHIFT}
   - {t: KP DOT, h: ESC}
   - ENTER
@@ -264,21 +264,21 @@ layers:
   - UP ARROW
   - '&msc SCRL_UP'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&hidarikado'
   - '&msc SCRL_LEFT'
   - '&msc SCRL_RIGHT'
-  - Gui+DOWN
+  - '&migikado'
   - {t: ▽, type: trans}
-  - HOME
+  - END
   - '&msc SCRL_LEFT'
   - {t: DOWN ARROW, type: held}
   - '&msc SCRL_RIGHT'
-  - END
+  - HOME
   - OUT TOG
-  - {t: ▽, type: trans}
+  - Gui+LEFT
   - Ctl+Sft+TAB
   - Ctl+TAB
-  - '&migikado'
+  - Gui+RIGHT
   - {t: ▽, type: trans}
   - LEFT SHIFT
   - Gui+Sft+LEFT ARROW
@@ -287,10 +287,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&hidarikado'
-  - Gui+LEFT
-  - '&mkp MB2'
+  - '&window_hidarisita'
+  - Gui+UP ARROW
+  - Gui+DOWN
+  - '&window_migisita'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -347,18 +347,18 @@ layers:
   FN_W:
   - '&studio_unlock'
   - {t: ▽, type: trans}
+  - '&kakko2'
+  - '&kakko1'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - BT CLR
   - '&pascal'
   - Sft+7
   - Sft+8
   - '&expart'
   - '&TS078'
-  - BT CLR ALL
-  - {t: ▽, type: trans}
-  - '&kakko2'
-  - '&kakko1'
+  - Sft+,
+  - Sft+.
+  - Sft+9
+  - Sft+0
   - '&rimo'
   - '&gaiyousyo'
   - '&chains'
@@ -370,8 +370,8 @@ layers:
   - F2
   - F5
   - F9
-  - {t: BT, h: '4'}
-  - {t: BT, h: '3'}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - '&zeimu1'
   - '&zeimu2'
   - Sft+1
@@ -383,7 +383,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - BT CLR
   - {t: ▽, type: trans}
   - {type: held}
   - '&zei'
@@ -436,28 +436,28 @@ layers:
   - F3
   - F4
   - F5
-  - '&BT0'
-  - '&BT1'
-  - {t: BT, h: '2'}
+  - {t: ▽, type: trans}
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - F6
   - F7
   - F8
   - F9
-  - {t: ▽, type: trans}
+  - F10
   - OUT TOG
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&studio_unlock'
-  - {t: ▽, type: trans}
-  - '1'
-  - '2'
-  - '3'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {type: held}
+  - {t: BT, h: '2'}
+  - F11
+  - F12
+  - F13
+  - F14
+  - F15
+  - F16
   - '&bootloader'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -470,7 +470,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&studio_unlock'
   - '&bootloader'
   - BT CLR ALL
   BLE_M:
@@ -541,3 +541,7 @@ combos:
   k: '&mg_set_0'
 - p: [12, 11]
   k: '&mkp MB1'
+- p: [6, 7]
+  k: {t: BT, h: '0'}
+- p: [7, 8]
+  k: {t: BT, h: '1'}
