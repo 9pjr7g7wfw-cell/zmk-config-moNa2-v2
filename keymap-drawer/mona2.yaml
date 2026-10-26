@@ -42,7 +42,7 @@ layers:
   - {t: SPACE, h: LEFT CONTROL}
   - BACKSPACE
   - {t: ENTER, h: FN_W}
-  - RIGHT SHIFT
+  - KP NUMLOCK
   MAC:
   - Q
   - W
