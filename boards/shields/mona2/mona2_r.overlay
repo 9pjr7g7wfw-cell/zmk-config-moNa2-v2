@@ -127,3 +127,10 @@
      * than the original 1/100. Fractional counts are accumulated. */
     input-processors = <&mg &scroll_runtime_input_processor &mouse_runtime_input_processor &zip_scroll_scaler 1 60 &inertial_scroll>;
 };
+
+&tball_listener {
+    sniper_mode {
+        layers = <9>;
+        input-processors = <&zip_xy_scaler 1 10>;
+    };
+};
