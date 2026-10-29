@@ -19,7 +19,7 @@ layers:
   - Alt+`
   - H
   - {t: J, h: Sft+`}
-  - K
+  - {t: K, h: FN_M}
   - {t: L, h: BLE_W}
   - {t: '-', h: SCRL_W}
   - {t: Z, h: Ctl+Z}
@@ -87,7 +87,7 @@ layers:
   - BACKSPACE
   - RIGHT SHIFT
   NUM_W:
-  - {t: Ctl+Sft+LEFT, h: Ctl+Sft+RIGHT}
+  - {t: Ctl+Sft+LEFT, h: (LC(LS(RIGHT)))}
   - {t: F3, h: F4}
   - {t: F6, h: F7}
   - {t: F10, h: F8}
@@ -96,7 +96,7 @@ layers:
   - KP 7
   - KP 8
   - KP 9
-  - {t: Sft+Ctl+UP ARROW, h: Ctl+Sft+DOWN}
+  - {t: Sft+Ctl+UP ARROW, h: (LC(LS(DOWN)))}
   - {t: KP MINUS, h: LEFT SHIFT}
   - {t: KP DOT, h: ESC}
   - ENTER
@@ -388,48 +388,48 @@ layers:
   - {type: held}
   - '&zei'
   FN_M:
-  - A
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&mkp MB1'
+  - {type: held}
+  - '&mkp MB2'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   BLE_W:
   - F1
   - F2
