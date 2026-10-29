@@ -252,34 +252,6 @@
             bindings = <&kp LANG1 &kp K &kp A &kp K &kp K &kp O &kp SPACE>;
             label = "KAKKO2";
         };
-
-        hidarikado: hidarikado {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_WIN &kp LEFT &kp UP>;
-            label = "HIDARIKADO";
-        };
-
-        migikado: migikado {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_WIN &kp RIGHT &kp UP>;
-            label = "MIGIKADO";
-        };
-
-        window_hidarisita: window_hidarisita {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kt LEFT_WIN &kp LEFT &kp DOWN>;
-            label = "WINDOW_HIDARISITA";
-        };
-
-        window_migisita: window_migisita {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kt LEFT_WIN &kp RIGHT &kp DOWN>;
-            label = "WINDOW_MIGISITA";
-        };
     };
 
     behaviors {
@@ -429,7 +401,7 @@
             display-name = "WIN";
             bindings = <
 &mt LG(L) Q     &kp W         &mt LG(E) E   &kp R                 &mt LC(T) T                                               &mt LC(Y) Y  &mt LC(U) U      &mt LC(Q) I      &kp O              &mt LC(P) P
-&mt LEFT_ALT A  &mt LC(S) S   &lt 6 D       &mt LC(F) F           &kp G                                  &kp LA(GRAVE)      &kp H        &mt LS(GRAVE) J  &kp K            &lt 10 L           &lt 6 MINUS
+&mt LEFT_ALT A  &mt LC(S) S   &lt 6 D       &mt LC(F) F           &kp G                                  &kp LA(GRAVE)      &kp H        &mt LS(GRAVE) J  &lt 9 K          &lt 10 L           &lt 6 MINUS
 &mt LC(Z) Z     &mt LC(X) X   &mt LC(C) C   &mt LC(V) V           &kp B        &kp LC(LG(LEFT))          &kp LC(LG(RIGHT))  &kp N        &mt LC(W) M      &mt LC(T) COMMA  &mt LS(MINUS) DOT  &mt LS(SLASH) SLASH
 &kp RCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_SHIFT LANG2  &lt 2 LANG1  &mt LEFT_CONTROL SPACE    &kp BACKSPACE      &lt 8 ENTER                                                       &kp KP_NUMLOCK
             >;
@@ -452,10 +424,10 @@
         num_win {
             display-name = "NUM_W";
             bindings = <
-&mt LC(LS(RIGHT)) LC(LS(LEFT))  &mt F4 F3       &mt F7 F6       &mt F8 F10    &mt F12 F11                                  &kp KP_ASTERISK       &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9            &mt LC(LS(DOWN)) LS(LC(UP_ARROW))
-&mt LEFT_SHIFT KP_MINUS         &mt ESC KP_DOT  &kp ENTER       &kp TAB       &kp LS(TAB)                   &kp LS(SEMI)   &kp LS(SINGLE_QUOTE)  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6            &kp KP_SLASH
-&kp LEFT                        &kp RIGHT       &kp DOWN_ARROW  &kp UP_ARROW  &kp SPACE    &kp LS(LG(S))    &kp RS(EQUAL)  &kp EQUAL             &kp KP_NUMBER_1  &kp KP_NUMBER_2  &mt LS(MINUS) KP_NUMBER_3  &mt LS(SLASH) SLASH
-&kp LCTRL                       &kp LEFT_GUI    &kp LEFT_ALT    &trans        &trans       &trans           &kp BACKSPACE  &kp KP_NUMBER_0                                                                    &kp RIGHT_SHIFT
+&mt (LC(LS(RIGHT))) LC(LS(LEFT))  &mt F4 F3       &mt F7 F6       &mt F8 F10    &mt F12 F11                                  &kp KP_ASTERISK       &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9            &mt (LC(LS(DOWN))) LS(LC(UP_ARROW))
+&mt LEFT_SHIFT KP_MINUS           &mt ESC KP_DOT  &kp ENTER       &kp TAB       &kp LS(TAB)                   &kp LS(SEMI)   &kp LS(SINGLE_QUOTE)  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6            &kp KP_SLASH
+&kp LEFT                          &kp RIGHT       &kp DOWN_ARROW  &kp UP_ARROW  &kp SPACE    &kp LS(LG(S))    &kp RS(EQUAL)  &kp EQUAL             &kp KP_NUMBER_1  &kp KP_NUMBER_2  &mt LS(MINUS) KP_NUMBER_3  &mt LS(SLASH) SLASH
+&kp LCTRL                         &kp LEFT_GUI    &kp LEFT_ALT    &trans        &trans       &trans           &kp BACKSPACE  &kp KP_NUMBER_0                                                                    &kp RIGHT_SHIFT
             >;
 
             sensor-bindings = <&rsr_default>;
@@ -534,10 +506,10 @@
         function_mac {
             display-name = "FN_M";
             bindings = <
-&kp A   &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
+&none  &none  &none  &none  &none                  &none  &none     &none  &none     &none
+&none  &none  &none  &none  &none           &none  &none  &mkp MB1  &none  &mkp MB2  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none     &none  &none     &none
+&none  &none  &none  &none  &none  &none    &none  &none                             &none
             >;
         };
 
