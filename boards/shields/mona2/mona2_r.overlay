@@ -131,6 +131,6 @@
 &trackball_central_listener {
     sniper_mode {
         layers = <9>;
-        input-processors = <&zip_xy_scaler 1 10>;
+        input-processors = <&zip_xy_scaler 1 4>;
     };
 };
