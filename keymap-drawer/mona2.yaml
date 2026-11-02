@@ -383,7 +383,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - BT CLR
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
   - '&zei'
@@ -438,8 +438,8 @@ layers:
   - F5
   - {t: ▽, type: trans}
   - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
   - {t: ▽, type: trans}
+  - {t: BT, h: '4'}
   - {t: ▽, type: trans}
   - F6
   - F7
