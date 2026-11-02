@@ -9,7 +9,7 @@ layers:
   - {t: Y, h: Ctl+Y}
   - {t: U, h: Ctl+U}
   - {t: I, h: Ctl+Q}
-  - {t: O, h: Sft+`}
+  - O
   - {t: P, h: Ctl+P}
   - {t: A, h: LEFT ALT}
   - {t: S, h: Ctl+S}
@@ -17,7 +17,7 @@ layers:
   - {t: F, h: LANG2}
   - G
   - Alt+`
-  - H
+  - {t: H, h: Sft+`}
   - {t: J, h: LANG1}
   - {t: K, h: BLE_W}
   - {t: L, h: FN_M}
@@ -87,7 +87,7 @@ layers:
   - BACKSPACE
   - RIGHT SHIFT
   NUM_W:
-  - {t: F1, h: F2}
+  - Sft+TAB
   - {t: F3, h: F4}
   - {t: F6, h: F5}
   - {t: F7, h: F8}
