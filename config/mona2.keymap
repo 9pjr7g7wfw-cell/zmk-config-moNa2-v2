@@ -405,10 +405,10 @@
         win_layer {
             display-name = "WIN";
             bindings = <
-&mt LG(L) Q     &kp W         &mt LG(E) E   &mt LC(F) R           &mt LC(T) T                                               &mt LC(Y) Y  &mt LC(U) U  &mt LC(Q) I      &mt LS(GRAVE) O    &mt LC(P) P
-&mt LEFT_ALT A  &mt LC(S) S   &lt 6 D       &mt LANG2 F           &kp G                                  &kp LA(GRAVE)      &kp H        &mt LANG1 J  &lt 10 K         &lt 9 L            &lt 6 MINUS
-&mt LC(Z) Z     &mt LC(X) X   &mt LC(C) C   &mt LC(V) V           &kp B        &kp LC(LG(LEFT))          &kp LC(LG(RIGHT))  &kp N        &mt LC(W) M  &mt LC(T) COMMA  &mt LS(MINUS) DOT  &mt LS(SLASH) SLASH
-&kp RCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_SHIFT LANG2  &lt 2 LANG1  &mt LEFT_CONTROL SPACE    &kp BACKSPACE      &lt 8 ENTER                                                   &kp KP_NUMLOCK
+&mt LG(L) Q     &kp W         &mt LG(E) E   &mt LC(F) R           &mt LC(T) T                                               &mt LC(Y) Y      &mt LC(U) U  &mt LC(Q) I      &kp O              &mt LC(P) P
+&mt LEFT_ALT A  &mt LC(S) S   &lt 6 D       &mt LANG2 F           &kp G                                  &kp LA(GRAVE)      &mt LS(GRAVE) H  &mt LANG1 J  &lt 10 K         &lt 9 L            &lt 6 MINUS
+&mt LC(Z) Z     &mt LC(X) X   &mt LC(C) C   &mt LC(V) V           &kp B        &kp LC(LG(LEFT))          &kp LC(LG(RIGHT))  &kp N            &mt LC(W) M  &mt LC(T) COMMA  &mt LS(MINUS) DOT  &mt LS(SLASH) SLASH
+&kp RCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_SHIFT LANG2  &lt 2 LANG1  &mt LEFT_CONTROL SPACE    &kp BACKSPACE      &lt 8 ENTER                                                       &kp KP_NUMLOCK
             >;
 
             sensor-bindings = <&rsr_default>, <&inc_dec_kp C_VOL_DN C_VOL_UP>;
@@ -429,7 +429,7 @@
         num_win {
             display-name = "NUM_W";
             bindings = <
-&mt F2 F1                &mt F4 F3       &mt F5 F6       &mt F8 F7     &mt F9 F10                                   &kp KP_ASTERISK  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9            &mt (LC(LS(DOWN))) LS(LC(UP_ARROW))
+&kp LS(TAB)              &mt F4 F3       &mt F5 F6       &mt F8 F7     &mt F9 F10                                   &kp KP_ASTERISK  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9            &mt (LC(LS(DOWN))) LS(LC(UP_ARROW))
 &mt LEFT_SHIFT KP_MINUS  &mt ESC KP_DOT  &kp ENTER       &kp TAB       &mt F12 F11                   &kp LS(APOS)   &kp LS(SEMI)     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6            &kp KP_SLASH
 &kp LEFT                 &kp RIGHT       &kp DOWN_ARROW  &kp UP_ARROW  &kp SPACE    &kp LS(LG(S))    &kp RS(EQUAL)  &kp EQUAL        &kp KP_NUMBER_1  &kp KP_NUMBER_2  &mt LS(MINUS) KP_NUMBER_3  &mt LS(SLASH) SLASH
 &kp LCTRL                &kp LEFT_GUI    &kp LEFT_ALT    &trans        &trans       &trans           &kp BACKSPACE  &kp KP_NUMBER_0                                                               &kp RIGHT_SHIFT
