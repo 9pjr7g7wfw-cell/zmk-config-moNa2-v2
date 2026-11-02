@@ -4,21 +4,21 @@ layers:
   - {t: Q, h: Gui+L}
   - W
   - {t: E, h: Gui+E}
-  - R
+  - {t: R, h: Ctl+F}
   - {t: T, h: Ctl+T}
   - {t: Y, h: Ctl+Y}
   - {t: U, h: Ctl+U}
   - {t: I, h: Ctl+Q}
-  - O
+  - {t: O, h: Sft+`}
   - {t: P, h: Ctl+P}
   - {t: A, h: LEFT ALT}
   - {t: S, h: Ctl+S}
   - {t: D, h: SCRL_W}
-  - {t: F, h: Ctl+F}
+  - {t: F, h: LANG2}
   - G
   - Alt+`
   - H
-  - {t: J, h: Sft+`}
+  - {t: J, h: LANG1}
   - {t: K, h: BLE_W}
   - {t: L, h: FN_M}
   - {t: '-', h: SCRL_W}
@@ -545,5 +545,5 @@ combos:
   k: {t: BT, h: '0'}
 - p: [7, 8]
   k: {t: BT, h: '1'}
-- p: [11, 10]
+- p: [11, 13]
   k: Sft+TAB
