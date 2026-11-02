@@ -19,8 +19,8 @@ layers:
   - Alt+`
   - H
   - {t: J, h: Sft+`}
-  - {t: K, h: FN_M}
-  - {t: L, h: BLE_W}
+  - {t: K, h: BLE_W}
+  - {t: L, h: FN_M}
   - {t: '-', h: SCRL_W}
   - {t: Z, h: Ctl+Z}
   - {t: X, h: Ctl+X}
@@ -87,11 +87,11 @@ layers:
   - BACKSPACE
   - RIGHT SHIFT
   NUM_W:
-  - {t: Ctl+Sft+LEFT, h: (LC(LS(RIGHT)))}
+  - {t: F1, h: F2}
   - {t: F3, h: F4}
-  - {t: F6, h: F7}
-  - {t: F10, h: F8}
-  - {t: F11, h: F12}
+  - {t: F6, h: F5}
+  - {t: F7, h: F8}
+  - {t: F10, h: F9}
   - KP ASTERISK
   - KP 7
   - KP 8
@@ -101,9 +101,9 @@ layers:
   - {t: KP DOT, h: ESC}
   - ENTER
   - TAB
-  - Sft+TAB
-  - Sft+;
+  - {t: F11, h: F12}
   - Sft+'
+  - Sft+;
   - KP 4
   - KP 5
   - KP 6
@@ -359,7 +359,7 @@ layers:
   - Sft+.
   - Sft+9
   - Sft+0
-  - '&rimo'
+  - {t: ▽, type: trans}
   - '&gaiyousyo'
   - '&chains'
   - Sft+4
@@ -371,7 +371,7 @@ layers:
   - F5
   - F9
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&rimo'
   - '&zeimu1'
   - '&zeimu2'
   - Sft+1
@@ -406,8 +406,8 @@ layers:
   - ''
   - ''
   - '&mkp MB1'
-  - {type: held}
   - '&mkp MB2'
+  - {type: held}
   - ''
   - ''
   - ''
@@ -449,8 +449,8 @@ layers:
   - OUT TOG
   - {t: ▽, type: trans}
   - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
   - {type: held}
+  - {t: BT, h: '1'}
   - {t: BT, h: '2'}
   - F11
   - F12
@@ -472,7 +472,7 @@ layers:
   - {t: ▽, type: trans}
   - '&studio_unlock'
   - '&bootloader'
-  - BT CLR ALL
+  - {t: ▽, type: trans}
   BLE_M:
   - F1
   - F2
@@ -545,3 +545,5 @@ combos:
   k: {t: BT, h: '0'}
 - p: [7, 8]
   k: {t: BT, h: '1'}
+- p: [11, 10]
+  k: Sft+TAB
