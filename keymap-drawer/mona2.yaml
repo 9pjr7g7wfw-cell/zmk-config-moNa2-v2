@@ -27,18 +27,18 @@ layers:
   - {t: C, h: Ctl+C}
   - {t: V, h: Ctl+V}
   - B
-  - Ctl+Gui+LEFT
-  - Ctl+Gui+RIGHT
+  - LEFT
+  - RIGHT
   - N
   - {t: M, h: Ctl+W}
   - {t: ',', h: Ctl+T}
   - {t: ., h: Sft+-}
   - {t: /, h: Sft+/}
-  - RCTRL
+  - FN_M
   - LEFT WIN
   - LEFT ALT
-  - {t: LANG2, h: LEFT SHIFT}
-  - {t: LANG1, h: NUM_W}
+  - {t: DEL, h: LEFT SHIFT}
+  - {t: TAB, h: NUM_W}
   - {t: SPACE, h: LEFT CONTROL}
   - BACKSPACE
   - {t: ENTER, h: FN_W}
@@ -414,6 +414,8 @@ layers:
   - ''
   - ''
   - ''
+  - LEFT
+  - RIGHT
   - ''
   - ''
   - ''
@@ -422,11 +424,9 @@ layers:
   - ''
   - ''
   - ''
+  - LEFT SHIFT
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - LEFT CONTROL
   - ''
   - ''
   - ''
