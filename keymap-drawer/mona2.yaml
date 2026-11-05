@@ -5,7 +5,7 @@ layers:
   - W
   - {t: E, h: Gui+E}
   - {t: R, h: Ctl+F}
-  - {t: T, h: Ctl+T}
+  - {t: T, h: Ctl+Sft+T}
   - {t: Y, h: Ctl+Y}
   - {t: U, h: Ctl+U}
   - {t: I, h: Ctl+Q}
@@ -528,7 +528,7 @@ combos:
 - p: [30, 31]
   k: '&mkp MB5'
 - p: [1, 2]
-  k: Gui+TAB
+  k: F2
 - p: [2, 3]
   k: DEL
 - p: [17, 18]
