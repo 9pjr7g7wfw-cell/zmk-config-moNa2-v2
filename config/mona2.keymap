@@ -323,11 +323,6 @@
     combos {
         compatible = "zmk,combos";
 
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <13 12>;
-        };
-
         kakudai {
             bindings = <&kp LC(KP_PLUS)>;
             key-positions = <24 23>;
