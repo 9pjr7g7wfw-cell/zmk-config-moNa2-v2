@@ -348,7 +348,7 @@
             key-positions = <30 31>;
         };
 
-        kasoudesktop {
+        f2 {
             bindings = <&kp F2>;
             key-positions = <1 2>;
         };
@@ -396,6 +396,16 @@
         shifttab {
             bindings = <&kp LS(TAB)>;
             key-positions = <11 13>;
+        };
+
+        hidari_rightclik {
+            bindings = <&mkp MB2>;
+            key-positions = <12 13>;
+        };
+
+        hidari_middleclik {
+            bindings = <&mkp MB3>;
+            key-positions = <13 11>;
         };
     };
 
