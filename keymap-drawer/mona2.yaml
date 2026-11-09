@@ -547,5 +547,5 @@ combos:
   k: Sft+TAB
 - p: [12, 13]
   k: '&mkp MB2'
-- p: [13, 11]
+- p: [11, 10]
   k: '&mkp MB3'
