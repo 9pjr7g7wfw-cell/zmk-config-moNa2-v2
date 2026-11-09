@@ -400,7 +400,7 @@
 
         hidari_middleclik {
             bindings = <&mkp MB3>;
-            key-positions = <13 11>;
+            key-positions = <11 10>;
         };
     };
 
