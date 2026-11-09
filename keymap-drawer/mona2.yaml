@@ -265,8 +265,8 @@ layers:
   - '&msc SCRL_UP'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&msc SCRL_LEFT'
-  - '&msc SCRL_RIGHT'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - END
@@ -275,10 +275,10 @@ layers:
   - '&msc SCRL_RIGHT'
   - HOME
   - OUT TOG
-  - Gui+LEFT
+  - {t: ▽, type: trans}
   - Ctl+Sft+TAB
   - Ctl+TAB
-  - Gui+RIGHT
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - LEFT SHIFT
   - Gui+Sft+LEFT ARROW
@@ -288,8 +288,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Gui+UP ARROW
-  - Gui+DOWN
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -300,6 +298,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - Gui+LEFT
+  - Gui+RIGHT
   - {t: ▽, type: trans}
   SCRL_M:
   - ESCAPE
