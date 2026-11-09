@@ -482,10 +482,10 @@
         scroll_win {
             display-name = "SCRL_W";
             bindings = <
-&kp ESCAPE      &msc SCRL_DOWN          &kp UP_ARROW    &msc SCRL_UP             &trans                            &trans        &msc SCRL_LEFT    &msc SCRL_RIGHT  &trans         &trans
-&kp END         &msc SCRL_LEFT          &kp DOWN_ARROW  &msc SCRL_RIGHT          &kp HOME            &out OUT_TOG  &kp LG(LEFT)  &kp LC(LS(TAB))   &kp LC(TAB)      &kp LG(RIGHT)  &trans
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans    &trans    &trans        &trans        &kp LG(UP_ARROW)  &kp LG(DOWN)     &trans         &trans
-&trans          &trans                  &trans          &trans                   &trans    &trans    &trans        &trans                                                          &trans
+&kp ESCAPE      &msc SCRL_DOWN          &kp UP_ARROW    &msc SCRL_UP             &trans                            &trans         &trans           &trans       &trans  &trans
+&kp END         &msc SCRL_LEFT          &kp DOWN_ARROW  &msc SCRL_RIGHT          &kp HOME            &out OUT_TOG  &trans         &kp LC(LS(TAB))  &kp LC(TAB)  &trans  &trans
+&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans    &trans    &trans        &trans         &trans           &trans       &trans  &trans
+&trans          &trans                  &trans          &trans                   &trans    &trans    &kp LG(LEFT)  &kp LG(RIGHT)                                        &trans
             >;
 
             sensor-bindings = <&rsr_default>;
@@ -522,7 +522,7 @@
 &none  &none  &none  &kp LEFT_SHIFT  &none  &kp LEFT_CONTROL    &none      &none                              &none
             >;
 
-            sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
+            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
 
         ble_win {
