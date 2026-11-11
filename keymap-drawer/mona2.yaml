@@ -4,7 +4,7 @@ layers:
   - {t: Q, h: Gui+L}
   - W
   - {t: E, h: Gui+E}
-  - {t: R, h: Ctl+F}
+  - R
   - {t: T, h: Ctl+Sft+T}
   - {t: Y, h: Ctl+Y}
   - {t: U, h: Ctl+U}
@@ -14,7 +14,7 @@ layers:
   - {t: A, h: LEFT ALT}
   - {t: S, h: Ctl+S}
   - {t: D, h: SCRL_W}
-  - {t: F, h: LANG2}
+  - {t: F, h: Ctl+F}
   - G
   - Alt+`
   - {t: H, h: Sft+`}
@@ -37,7 +37,7 @@ layers:
   - FN_M
   - LEFT WIN
   - LEFT ALT
-  - {t: DEL, h: LEFT SHIFT}
+  - {t: Sft+`, h: (LEFT SHIFT)}
   - {t: TAB, h: NUM_W}
   - {t: SPACE, h: LEFT CONTROL}
   - BACKSPACE
@@ -87,7 +87,7 @@ layers:
   - BACKSPACE
   - RIGHT SHIFT
   NUM_W:
-  - Sft+TAB
+  - {t: F2, h: F1}
   - {t: F3, h: F4}
   - {t: F6, h: F5}
   - {t: F7, h: F8}
@@ -267,7 +267,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Gui+DOWN ARROW
   - {t: ▽, type: trans}
   - END
   - '&msc SCRL_LEFT'
@@ -275,7 +275,7 @@ layers:
   - '&msc SCRL_RIGHT'
   - HOME
   - OUT TOG
-  - {t: ▽, type: trans}
+  - Gui+UP ARROW
   - Ctl+Sft+TAB
   - Ctl+TAB
   - {t: ▽, type: trans}
@@ -345,7 +345,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   FN_W:
-  - '&studio_unlock'
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&kakko2'
   - '&kakko1'
@@ -526,14 +526,14 @@ combos:
 - p: [30, 31]
   k: '&mkp MB5'
 - p: [1, 2]
-  k: F2
+  k: Gui+TAB
 - p: [2, 3]
   k: DEL
-- p: [17, 18]
-  k: '&mkp MB1'
 - p: [18, 19]
+  k: '&mkp MB1'
+- p: [19, 17]
   k: '&mkp MB2'
-- p: [17, 19]
+- p: [17, 19, 18]
   k: '&mkp MB3'
 - p: [19, 20]
   k: '&mg_set_0'
@@ -543,9 +543,13 @@ combos:
   k: {t: BT, h: '0'}
 - p: [7, 8]
   k: {t: BT, h: '1'}
-- p: [11, 13]
-  k: Sft+TAB
-- p: [12, 13]
-  k: '&mkp MB2'
 - p: [11, 10]
+  k: Sft+TAB
+- p: [13, 11]
+  k: '&mkp MB2'
+- p: [11, 12, 13]
   k: '&mkp MB3'
+- p: [13, 12]
+  k: LANGUAGE 2
+- p: [17, 18]
+  k: LANGUAGE 1
