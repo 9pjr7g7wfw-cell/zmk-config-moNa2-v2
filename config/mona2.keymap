@@ -345,7 +345,7 @@
 
         windowitiran {
             bindings = <&kp LG(TAB)>;
-            key-positions = <1 2>;
+            key-positions = <1 2 3>;
         };
 
         del {
@@ -403,14 +403,34 @@
             key-positions = <11 12 13>;
         };
 
-        eisu {
-            bindings = <&kp LANGUAGE_2>;
+        Leftkakko {
+            bindings = <&kp LS(NUMBER_9)>;
             key-positions = <13 12>;
         };
 
-        kana {
-            bindings = <&kp LANGUAGE_1>;
+        rightkakko {
+            bindings = <&kp LS(NUMBER_0)>;
             key-positions = <17 18>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <1 2>;
+        };
+
+        macro_kakko {
+            bindings = <&kakko2>;
+            key-positions = <1 3>;
+        };
+
+        macro_kakko1 {
+            bindings = <&kakko1>;
+            key-positions = <6 8>;
+        };
+
+        f2 {
+            bindings = <&kp F2>;
+            key-positions = <10 13>;
         };
     };
 
@@ -420,10 +440,10 @@
         win_layer {
             display-name = "WIN";
             bindings = <
-&mt LG(L) Q       &kp W         &mt LG(E) E   &mt LC(Z) R                 &mt LC(LS(T)) T                                           &mt LC(Y) Y  &mt LC(U) U  &mt LC(Q) I      &kp O              &kp P
-&mt LEFT_ALT A    &mt LC(S) S   &kp D         &mt LC(F) F                 &kp G                                      &kp LA(GRAVE)  &mt LC(H) H  &mt LC(P) J  &lt 10 K         &lt 9 L            &lt 6 MINUS
-&mt LEFT_SHIFT Z  &mt LC(X) X   &mt LC(C) C   &mt LC(V) V                 &kp B            &kp LEFT                  &kp RIGHT      &kp N        &mt LC(W) M  &mt LC(T) COMMA  &mt LS(MINUS) DOT  &mt LS(SLASH) SLASH
-&kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &mt (LEFT_SHIFT) LS(GRAVE)  &lt 2 TAB        &mt LEFT_CONTROL SPACE    &kp BACKSPACE  &lt 8 ENTER                                                   &none
+&mt LG(L) Q       &kp W         &mt LG(E) E   &kp R                      &mt LC(LS(T)) T                                            &mt LC(Y) Y      &mt LC(U) U  &mt LC(Q) I      &kp O              &kp P
+&mt LEFT_ALT A    &mt LC(S) S   &kp D         &mt LC(F) F                &kp G                                       &kp LA(GRAVE)  &mt LS(GRAVE) H  &mt LC(P) J  &lt 10 K         &lt 9 L            &lt 6 MINUS
+&mt LC(Z) Z       &mt LC(X) X   &mt LC(C) C   &mt LC(V) V                &kp B             &kp LEFT                  &kp RIGHT      &kp N            &mt LC(W) M  &mt LC(T) COMMA  &mt LS(MINUS) DOT  &mt LS(SLASH) SLASH
+&kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_SHIFT LANGUAGE_2  &lt 2 LANGUAGE_1  &mt LEFT_CONTROL SPACE    &kp BACKSPACE  &lt 8 ENTER                                                       &kp RIGHT_SHIFT
             >;
 
             sensor-bindings = <&rsr_default>, <&inc_dec_kp C_VOL_DN C_VOL_UP>;
@@ -444,10 +464,10 @@
         num_win {
             display-name = "NUM_W";
             bindings = <
-&kp LC(PAGE_UP)          &kp LC(PAGE_DOWN)  &kp LS(N9)      &kp LS(N0)      &kakko2                                    &kp KP_ASTERISK    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9            &kp LS(APOS)
-&mt LEFT_SHIFT KP_MINUS  &mt ESC KP_DOT     &kp ENTER       &kp TAB         &kakko1                     &trans         &kp KP_SLASH       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6            &mt (SEMI) LS(SEMI)
-&kp LEFT                 &kp RIGHT          &kp DOWN_ARROW  &kp UP_ARROW    &kp SPACE  &kp LS(LG(S))    &trans         &kp EQUAL          &kp KP_NUMBER_1  &kp KP_NUMBER_2  &mt LS(MINUS) KP_NUMBER_3  &kp LS(EQUAL)
-&kp LCTRL                &kp LEFT_GUI       &kp LEFT_ALT    &kp KP_NUMLOCK  &trans     &trans           &kp BACKSPACE  &lt 8 KP_NUMBER_0                                                               &kp RIGHT_SHIFT
+&mt F1 F2                &mt F4 F3       &mt F5 F6       &mt F7 F8     &mt F9 F10                                    &kp KP_ASTERISK    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9            &kp LS(APOS)
+&mt LEFT_SHIFT KP_MINUS  &mt ESC KP_DOT  &kp ENTER       &kp TAB       &mt F12 F11                   &trans          &kp KP_SLASH       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6            &mt (SEMI) LS(SEMI)
+&kp LEFT                 &kp RIGHT       &kp DOWN_ARROW  &kp UP_ARROW  &kp SPACE    &kp LS(LG(S))    &kp KP_NUMLOCK  &kp EQUAL          &kp KP_NUMBER_1  &kp KP_NUMBER_2  &mt LS(MINUS) KP_NUMBER_3  &kp LS(EQUAL)
+&kp LCTRL                &kp LEFT_GUI    &kp LEFT_ALT    &trans        &trans       &trans           &kp BACKSPACE   &lt 8 KP_NUMBER_0                                                               &kp RIGHT_SHIFT
             >;
 
             sensor-bindings = <&rsr_default>;
@@ -492,10 +512,10 @@
         scroll_win {
             display-name = "SCRL_W";
             bindings = <
-&trans            &kp LS(F11)        &kp KP_MINUS      &kp LS(LC(KP_PLUS))   &trans                          &trans            &trans           &trans       &kp LG(DOWN_ARROW)  &trans
-&kp LC(HOME)      &kp LC(END)        &kp LC(PAGE_UP)   &kp LC(PAGE_DOWN)     &trans            &out OUT_TOG  &kp LG(UP_ARROW)  &kp LC(LS(TAB))  &kp LC(TAB)  &trans              &trans
-&kp LS(LC(LEFT))  &kp LS(LC(RIGHT))  &kp LS(LC(DOWN))  &kp LS(LC(UP_ARROW))  &trans  &trans    &trans        &trans            &trans           &trans       &trans              &trans
-&trans            &trans             &trans            &trans                &trans  &trans    &kp LG(LEFT)  &kp LG(RIGHT)                                                       &trans
+&trans            &kp LS(F11)        &kp KP_MINUS      &kp LS(LC(KP_PLUS))   &trans                          &trans         &kp LC(PG_UP)     &kp LC(PAGE_DOWN)  &trans  &trans
+&kp LC(HOME)      &kp LC(END)        &kp LC(PAGE_UP)   &kp LC(PAGE_DOWN)     &trans            &trans        &trans         &kp LC(LS(TAB))   &kp LC(TAB)        &trans  &trans
+&kp LS(LC(LEFT))  &kp LS(LC(RIGHT))  &kp LS(LC(DOWN))  &kp LS(LC(UP_ARROW))  &trans  &trans    &trans        &trans         &kp LG(UP_ARROW)  &kp LG(DOWN)       &trans  &trans
+&trans            &trans             &trans            &trans                &trans  &trans    &kp LG(LEFT)  &kp LG(RIGHT)                                               &trans
             >;
 
             sensor-bindings = <&rsr_default>;
@@ -516,10 +536,10 @@
         function_win {
             display-name = "FN_W";
             bindings = <
-&mt LS(F9) F9  &mt LS(F10) F10  &mt LS(F11) F11  &mt LS(F12) F12  &trans                        &pascal  &kp LS(N7)        &kp LS(N8)        &expart           &TS078
-&mt LS(F5) F5  &mt LS(F6) F6    &mt LS(F7) F7    &mt LS(F8) F8    &trans            &gaiyousyo  &chains  &kp LS(NUMBER_4)  &kp LS(N5)        &kp LS(NUMBER_6)  &kp LC(LA(DEL))
-&mt LS(F1) F1  &mt LS(F2) F2    &mt LS(F3) F3    &mt LS(F4) F4    &trans  &rimo     &zeimu1     &zeimu2  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &zei
-&trans         &trans           &trans           &trans           &trans  &trans    &trans      &trans                                                         &touki
+&trans  &trans  &trans  &trans  &trans                        &pascal  &kp LS(N7)        &kp LS(N8)        &expart           &TS078
+&trans  &trans  &trans  &trans  &trans            &gaiyousyo  &chains  &kp LS(NUMBER_4)  &kp LS(N5)        &kp LS(NUMBER_6)  &kp LC(LA(DEL))
+&trans  &trans  &trans  &trans  &trans  &rimo     &zeimu1     &zeimu2  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &zei
+&trans  &trans  &trans  &trans  &trans  &trans    &trans      &trans                                                         &touki
             >;
 
             sensor-bindings = <&inc_dec_kp 0 0>;
@@ -528,10 +548,10 @@
         function_mac {
             display-name = "FN_M";
             bindings = <
-&none  &none  &none     &none           &none                                 &none  &none     &none     &none   &none
-&none  &none  &kp LEFT  &kp RIGHT       &none                      &none      &none  &mkp MB1  &mkp MB2  &trans  &none
-&none  &none  &kp DOWN  &kp UP_ARROW    &none  &kp LEFT            &kp RIGHT  &none  &none     &none     &none   &none
-&none  &none  &none     &kp LEFT_SHIFT  &none  &kp LEFT_CONTROL    &none      &none                              &none
+&none  &none  &none     &none           &none                              &none  &none     &none     &none   &none
+&none  &none  &kp LEFT  &kp RIGHT       &none                      &none   &none  &mkp MB1  &mkp MB2  &trans  &none
+&none  &none  &kp DOWN  &kp UP_ARROW    &none  &trans              &trans  &none  &none     &none     &none   &none
+&none  &none  &none     &kp LEFT_SHIFT  &none  &kp LEFT_CONTROL    &none   &none                              &none
             >;
 
             sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
@@ -540,10 +560,10 @@
         ble_win {
             display-name = "BLE_W";
             bindings = <
-&kp F1   &kp F2   &kp F3   &kp F4   &kp F5                              &trans       &bt BT_SEL 3  &trans  &bt BT_SEL 4  &trans
-&kp F6   &kp F7   &kp F8   &kp F9   &kp F10             &out OUT_TOG    &trans       &bt BT_SEL 0  &trans  &bt BT_SEL 1  &bt BT_SEL 2
-&kp F11  &kp F12  &kp F13  &kp F14  &kp F15  &kp F16    &bootloader     &trans       &trans        &trans  &trans        &bt BT_CLR
-&trans   &trans   &trans   &trans   &trans   &trans     &studio_unlock  &bootloader                                      &trans
+&trans  &trans  &trans  &trans  &trans                            &trans       &bt BT_SEL 3  &trans  &bt BT_SEL 4  &trans
+&trans  &trans  &trans  &trans  &trans            &out OUT_TOG    &trans       &bt BT_SEL 0  &trans  &bt BT_SEL 1  &bt BT_SEL 2
+&trans  &trans  &trans  &trans  &trans  &trans    &bootloader     &trans       &trans        &trans  &trans        &bt BT_CLR
+&trans  &trans  &trans  &trans  &trans  &trans    &studio_unlock  &bootloader                                      &trans
             >;
         };
 
@@ -558,5 +578,3 @@
         };
     };
 };
-
-
